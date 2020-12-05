@@ -1,2 +1,5 @@
 server:
   port: 8081
+app:
+  service-endpoints:
+    data-storage-service: "http://data-storage-service"
