@@ -11,7 +11,7 @@
     <groupId>com.github.mitrakumarsujan</groupId>
     <artifactId>config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>config-server</name>
+    <name>Configuration Server</name>
     <description>Configuration Server for Anonymous Surveys</description>
 
     <properties>
