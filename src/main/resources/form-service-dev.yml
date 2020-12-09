@@ -2,4 +2,4 @@ server:
   port: 8081
 app:
   service-endpoints:
-    data-storage-service: "http://invalid-registry-id6"
+    data-storage-service: "http://invalid-registry-id7"
