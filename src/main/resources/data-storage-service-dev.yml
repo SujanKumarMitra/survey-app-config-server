@@ -2,4 +2,4 @@ server:
   port: 8082
 app:
   uploads:
-    base-dir: "D:/Projects/Anonymous-Surveys/dir/uploads"
+    base-dir: "D:/Projects/Anonymous-Surveys/directory/uploads"
