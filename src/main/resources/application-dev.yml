@@ -11,5 +11,5 @@ spring:
     config:
       server:
         git:
-          uri: "D:/Projects/Anonymous-Surveys/survey-app/config-server"
+          uri: "${user.home}/Work/Projects/Anonymous-Surveys/survey-app/config-server"
           search-paths: "src/main/resources"
