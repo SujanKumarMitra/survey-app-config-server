@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+
+        - id: "data-storage-service"
+          uri: "lb://data-storage-service"
+          predicates:
+            - "Path=/data-storage-service/**"
+          filters:
+            - "RewritePath=/data-storage-service(?<segment>/?.*), ${segment}"
+
+        - id: "form-service"
+          uri: "lb://form-service"
+          predicates:
+            - "Path=/form-service/**"
+          filters:
+            - "RewritePath=/form-service(?<segment>/?.*), ${segment}"
