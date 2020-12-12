@@ -3,6 +3,12 @@ spring:
     gateway:
       default-filters:
         - "DedupeResponseHeader=Access-Control-Allow-Origin"
+      globalcors:
+        cors-configurations:
+          "[/**]":
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods: "*"
       routes:
 
         - id: "data-storage-service"
