@@ -1,5 +1,13 @@
 server:
   port: 8082
+
 app:
   uploads:
     base-dir: "${user.home}/Work/Projects/Anonymous-Surveys/uploads"
+
+spring:
+  data:
+    mongodb:
+      host: "localhost"
+      port: 27017
+      database: "survey_app"
