@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "config-server"
+  profiles:
+    active:
+      - "test"
+
+  cloud:
+    discovery:
+      enabled: false
+
+    config:
+      server:
+        git:
+          uri: "${user.home}/Work/Projects/Anonymous-Surveys/survey-app/config-server"
+          search-paths: "src/main/resources"
