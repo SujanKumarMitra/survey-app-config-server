@@ -2,7 +2,7 @@ server:
   port: 8082
 
 app:
-  storage-strategy: "file"
+  storage-strategy: "database"
   uploads:
     base-dir: "${user.home}/Work/Projects/Anonymous-Surveys/uploads"
 
