@@ -3,3 +3,16 @@ server:
 app:
   service-endpoints:
     data-storage-service: "http://data-storage-service"
+
+spring:
+  redis:
+    host: "localhost"
+    port: 6379
+
+    cache:
+      type: "redis"
+      redis:
+        use-key-prefix: true
+        time-to-live: "10m"
+        cache-null-values: false
+        key-prefix: "survey_app::"
